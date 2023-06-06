@@ -1,3 +1,4 @@
 from django.contrib import admin
+from hc.models import Sprint
 
-# Register your models here.
+admin.site.register(Sprint)

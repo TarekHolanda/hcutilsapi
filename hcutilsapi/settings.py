@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1im97p&$o!ie&w3gt^+ey&p_2mj)nx&dtwx7@=z0!tffni^osq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "45.239.8.12"]
 
 
 # Application definition
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'hcutilsapi.urls'
+ROOT_URLCONF = "hcutilsapi.urls"
 
 TEMPLATES = [
     {
@@ -75,9 +75,15 @@ WSGI_APPLICATION = 'hcutilsapi.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "hcutilsproduction",
+        "USER": "hcutilsuser",
+        "PASSWORD": "2CvzGtmTqR5ZStgo",
+        "HOST": "hcutilsproduction.c3v88weevtjk.us-east-2.rds.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
