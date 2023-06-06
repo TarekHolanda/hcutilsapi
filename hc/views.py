@@ -8,7 +8,16 @@ def index(request):
     return HttpResponse("Hello, HC!!!")
 
 
-def sprint(request):
+def sprints(request):
     data = Sprint.objects.all()
     serializer = SprintSerializer(data, many=True)
     return JsonResponse({"data": serializer.data})
+
+
+def sprint(request):
+    try:
+        data = Sprint.objects.get(pk=1)
+        serializer = SprintSerializer(data)
+        return JsonResponse({"data": serializer.data})
+    except Sprint.DoesNotExist:
+        return HttpResponse(status=404)
