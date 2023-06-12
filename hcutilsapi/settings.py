@@ -120,7 +120,7 @@ ALLOWED_HOSTS = ["*"]
 
 STATIC_ROOT = "/static/"
 
-CSRF_TRUSTED_ORIGINS = ["8"]
+CSRF_TRUSTED_ORIGINS = ["*"]
 
 
 # Static files (CSS, JavaScript, Images)
