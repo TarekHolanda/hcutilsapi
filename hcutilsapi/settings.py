@@ -118,6 +118,8 @@ USE_TZ = True
 
 ALLOWED_HOSTS = ["*"]
 
+STATIC_ROOT = "/static/"
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
