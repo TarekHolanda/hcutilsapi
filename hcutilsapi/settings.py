@@ -120,7 +120,7 @@ ALLOWED_HOSTS = ["*"]
 
 STATIC_ROOT = "/static/"
 
-CSRF_TRUSTED_ORIGINS = ["https://hc-utils-api.herokuapp.com/"]
+CSRF_TRUSTED_ORIGINS = ["8"]
 
 
 # Static files (CSS, JavaScript, Images)
