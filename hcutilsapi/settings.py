@@ -77,12 +77,14 @@ WSGI_APPLICATION = 'hcutilsapi.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "d5v7g91as85o67",
-        "USER": "jyxgjwytlrkjyo",
-        "PASSWORD": "f319602d8bf62f87a0f6a75572839b1b1189f6ea50fac82a175bf6e3d71c6467",
-        "HOST": "ec2-3-232-103-50.compute-1.amazonaws.com",
+        "NAME": "d3ik17o1fm6rq2",
+        "USER": "uhcnqwpvvaehaw",
+        "PASSWORD": "65d674e42e3d78cf2911856d59789f084996c6324f59746abdc7d9a3a87e4650",
+        "HOST": "ec2-44-199-147-86.compute-1.amazonaws.com",
         "PORT": "5432",
     }
+    # postgres://uhcnqwpvvaehaw:65d674e42e3d78cf2911856d59789f084996c6324f59746abdc7d9a3a87e4650@ec2-44-199-147-86.compute-1.amazonaws.com:5432/d3ik17o1fm6rq2
+    # "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
 
 
