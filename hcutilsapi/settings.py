@@ -120,8 +120,10 @@ ALLOWED_HOSTS = ["*"]
 
 STATIC_ROOT = "/static/"
 
-CSRF_TRUSTED_ORIGINS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = ["https://hc-utils-api.herokuapp.com/"]
+CORS_ORIGIN_ALLOW_ALL = True
+SECURE_SSL_REDIRECT = False
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
