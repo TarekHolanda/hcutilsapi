@@ -16,10 +16,12 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, reverse_lazy
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
-    path("hc/", include("hc.urls")),
+    path("", RedirectView.as_view(url=reverse_lazy("admin:index"))),
+    # path("hc/", include("hc.urls")),
     path("admin/", admin.site.urls),
     # path("api-auth/", include("rest_framework.urls"))
 ]
